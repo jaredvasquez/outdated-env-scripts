@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jgv7/syst_h012/systs_marc'
+let g:netrw_dirhist_2='/Users/jgv7/CERN/Documentation/HGamCoupling/Support/tex'
+let g:netrw_dirhist_3='/Users/jgv7/Downloads'
+let g:netrw_dirhist_4='/Users/jgv7/syst_h013/systs_marc_old'
+let g:netrw_dirhist_5='/Users/jgv7/CERN/Documentation/CONF_ICHEP2016/latex'
+let g:netrw_dirhist_6='/Users/jgv7/CERN/Documentation'
+let g:netrw_dirhist_7='/Users/jgv7/CERN/Documentation/PIDPaper2017/tex'
+let g:netrw_dirhist_8='/Users/jgv7/tmva/mvaTool'
