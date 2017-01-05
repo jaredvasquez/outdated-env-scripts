@@ -9,6 +9,12 @@ export LSCOLORS=Exfxcxdxbxegedabagacad
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
+# CERN SVN
+SVNOFF='svn+ssh://svn.cern.ch/reps/atlasoff'
+SVNGRP='svn+ssh://svn.cern.ch/reps/atlasgrp'
+SVNUSR='svn+ssh://svn.cern.ch/reps/atlasusr'
+SVNHGAM='svn+ssh://svn.cern.ch/reps/atlasphys-hsg1'
+
 # Make things bea-u-ti-ful
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
