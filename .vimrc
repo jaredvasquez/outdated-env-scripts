@@ -8,6 +8,8 @@
 autocmd BufRead *.py set autoindent
 set number
 
+inoremap jj <ESC>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
 "       Amir Salihefendic
