@@ -1,3 +1,7 @@
+# Load machine specific environment
+if [ -f ~/.bash_local ]; then
+  source ~/.bash_local
+fi
 
 # Load aliases
 source ~/.bash_aliases
