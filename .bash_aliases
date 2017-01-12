@@ -8,6 +8,7 @@ alias ssh='ssh -Y'
 alias py=python
 alias ipy=ipython
 alias rl='root -q -b -l'
+alias root='root -l'
 
 # ssh aliases
 alias lxplus='ssh -Y lxplus.cern.ch'
