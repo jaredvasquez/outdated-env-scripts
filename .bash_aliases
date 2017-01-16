@@ -1,7 +1,6 @@
 # standard aliases
 alias o=open
 alias ll='ls -lt'
-alias ls='ls -CF'
 alias ssh='ssh -Y'
 
 # application aliases

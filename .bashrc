@@ -19,6 +19,26 @@ SVNGRP='svn+ssh://svn.cern.ch/reps/atlasgrp'
 SVNUSR='svn+ssh://svn.cern.ch/reps/atlasusr'
 SVNHGAM='svn+ssh://svn.cern.ch/reps/atlasphys-hsg1'
 
+# Tab completion for ssh hosts
+_complete_ssh_hosts ()
+{
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  comp_ssh_hosts=`cat ~/.ssh/known_hosts | \
+                  cut -f 1 -d ' ' | \
+                  sed -e s/,.*//g | \
+                  grep -v ^# | \
+                  uniq | \
+                  grep -v "\[" ;
+                  cat ~/.ssh/config | \
+                  grep "^Host " | \
+                  awk '{print $2}'
+              `
+  COMPREPLY=( $(compgen -W "${comp_ssh_hosts}" -- $cur))
+  return 0
+}
+complete -F _complete_ssh_hosts ssh
+
 # Make things bea-u-ti-ful
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 

@@ -9,6 +9,13 @@ autocmd BufRead *.py set autoindent
 set number
 
 inoremap jj <ESC>
+cnoremap jj <C-c>
+
+" Map Space to Ctrl+W for easier windowing...
+noremap <Space> <C-w>
+
+" switch command key to ;, saves many SHIFT keystrokes!
+noremap ; :
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
