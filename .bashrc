@@ -1,3 +1,7 @@
+# Set vi mode for bash
+set -o vi
+bind '"jj":vi-movement-mode'
+
 # Load machine specific environment
 if [ -f ~/.bash_local ]; then
   source ~/.bash_local
